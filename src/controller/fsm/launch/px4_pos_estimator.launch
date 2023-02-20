@@ -1,0 +1,11 @@
+<launch>
+	<!-- run the position_control.cpp -->
+
+	<node pkg="fsm" type="px4_pos_estimator" name="px4_pos_estimator" output="screen">
+
+		<!-- load blacklist, config -->
+        <rosparam command="load" file="$(find fsm)/config/px4_pos_estimator.yaml" />
+		<remap from = "~odom"        to ="/orb_odom"/>
+		<!-- <remap from = "~odom"        to ="/orb_odom"/> -->
+	</node>
+</launch>

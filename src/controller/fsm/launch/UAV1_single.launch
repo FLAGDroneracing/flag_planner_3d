@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<launch>
+    <include file="$(find mavros)/launch/px4.launch">
+       <arg name="fcu_url" value="/dev/ttyACM0:921600" />
+    </include>
+
+    <node pkg="fsm" type="single_offboard" name="single_offboard" output="screen">
+        <param name="way_num"     value="7"    type="int"/>
+        <param name="waypoint0_x" value="0.0" type="double"/>
+        <param name="waypoint0_y" value="0.0" type="double"/>
+        <param name="waypoint0_z" value="1.5" type="double"/>
+
+        <param name="waypoint1_x" value="4.0" type="double"/>
+        <param name="waypoint1_y" value="0.0" type="double"/>
+        <param name="waypoint1_z" value="1.5" type="double"/>
+
+        <param name="waypoint2_x" value="9.0" type="double"/>
+        <param name="waypoint2_y" value="-0.4" type="double"/>
+        <param name="waypoint2_z" value="1.8" type="double"/>
+
+        <param name="waypoint3_x" value="22.8" type="double"/>
+        <param name="waypoint3_y" value="-0.8" type="double"/>
+        <param name="waypoint3_z" value="1.5" type="double"/>
+
+        <param name="waypoint4_x" value="24.40" type="double"/>
+        <param name="waypoint4_y" value="2.60 " type="double"/>
+        <param name="waypoint4_z" value="1.5" type="double"/>
+
+        <param name="waypoint5_x" value="22.8" type="double"/>
+        <param name="waypoint5_y" value="6.45" type="double"/>
+        <param name="waypoint5_z" value="1.5" type="double"/>
+
+        <param name="waypoint6_x" value="3.9" type="double"/>
+        <param name="waypoint6_y" value="4.6" type="double"/>
+        <param name="waypoint6_z" value="1.5" type="double"/>
+
+        <param name="waypoint7_x" value="-1.0" type="double"/>
+        <param name="waypoint7_y" value="4.6" type="double"/>
+        <param name="waypoint7_z" value="1.5" type="double"/>
+
+        <param name="wall_x" value="17.5" type="double"/>
+
+        <!--   大圆发1，小圆发2，异性圈发3 -->
+
+<!-- 规划参数 -->
+        <param name="single_offboard/delta_T"                      value="0.02"/>
+        <param name="single_offboard/set_height"                value="1.2"/>
+        <param name="single_offboard/yaw_rate_max"        value="1.0"/>
+        <param name="single_offboard/seq_interval_time" value="0.4"/>
+
+    </node>
+</launch>

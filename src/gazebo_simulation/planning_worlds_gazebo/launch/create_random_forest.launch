@@ -1,0 +1,16 @@
+<launch>
+
+	<!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+	<node pkg="planning_worlds_gazebo" name="voxblox" type="create_random_forest" output="screen">
+		<param name = "seed"         value = "0"/>
+		<param name = "density"      value = "0.1"/>
+		<param name = "world_size_x" value = "20.0"/>
+		<param name = "world_size_y" value = "20.0"/>
+		<param name = "world_size_z" value = "3.0"/>
+		<param name = "kMinHeight"   value = "0.5"/>
+		<param name = "kMaxHeight"   value = "3.0"/>
+		<param name = "kMinRadius"   value = "0.15"/>
+		<param name = "kMaxRadius"   value = "0.5"/>
+		<param name = "rand_prop"    value = "0.0"/>
+	</node>
+</launch>

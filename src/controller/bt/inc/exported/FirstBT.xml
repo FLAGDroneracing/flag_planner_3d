@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: FirstBT.xml-->
+<behavior name="FirstBT" agenttype="Agent1" version="5">
+  <node class="Sequence" id="1">
+    <node class="Sequence" id="4">
+      <node class="Action" id="15">
+        <property Method="Self.Agent1::takeoff()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="0">
+        <property Method="Self.Agent1::ring1()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="2">
+        <property Method="Self.Agent1::ring2()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="7">
+        <property Method="Self.Agent1::ring15()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="8">
+        <property Method="Self.Agent1::ring11()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+    </node>
+    <node class="Action" id="9">
+      <property Method="Self.Agent1::ring12()" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+    <node class="Sequence" id="6">
+      <node class="Action" id="10">
+        <property Method="Self.Agent1::ring13()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="11">
+        <property Method="Self.Agent1::ring14()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="12">
+        <property Method="Self.Agent1::ring8()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="13">
+        <property Method="Self.Agent1::ring9()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+      <node class="Action" id="14">
+        <property Method="Self.Agent1::ring10()" />
+        <property ResultOption="BT_SUCCESS" />
+      </node>
+    </node>
+  </node>
+</behavior>

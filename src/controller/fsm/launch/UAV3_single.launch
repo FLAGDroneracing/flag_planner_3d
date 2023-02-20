@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<launch>
+    <include file="$(find mavros)/launch/px4.launch">
+       <arg name="fcu_url" value="/dev/ttyTHS0:921600" />
+    </include>
+    <node pkg="fsm" type="single_offboard" name="single_offboard" output="screen">
+        <param name="way_num"     value="4"    type="int"/>
+        <param name="waypoint0_x" value="0.0" type="double"/>
+        <param name="waypoint0_y" value="0.0" type="double"/>
+        <param name="waypoint0_z" value="0.5" type="double"/>
+        <param name="waypoint1_x" value="1.34" type="double"/>
+        <param name="waypoint1_y" value="-1.08" type="double"/>
+        <param name="waypoint1_z" value="0.5" type="double"/>
+        <param name="waypoint2_x" value="4.57" type="double"/>
+        <param name="waypoint2_y" value="-1.30" type="double"/>
+        <param name="waypoint2_z" value="0.5" type="double"/>
+        <param name="waypoint3_x" value="5.83" type="double"/>
+        <param name="waypoint3_y" value="1.03" type="double"/>
+        <param name="waypoint3_z" value="0.5" type="double"/>
+        <param name="waypoint4_x" value="8.95" type="double"/>
+        <param name="waypoint4_y" value="1.03" type="double"/>
+        <param name="waypoint4_z" value="0.5" type="double"/>
+    </node>
+
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="model_state" name="extract_state_client" type="extract_state_gazebo" output="screen">
+        <!-- <remap from="/extract_state_client/iris" to="/drone_0_vins_estimator/odometry"/> -->
+
+    </node>
+</launch>

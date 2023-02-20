@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+  <!-- A区域障碍模型：两面墙 -->
+  <model name='A_walls'>
+
+    <!-- 整体位姿 -->  
+    <pose frame=''>-0 0 0 0 -0 0</pose>
+
+    <!-- 组件1：前侧墙 -->
+    <link name='Wall_1'>
+        <!-- 碰撞参数 -->
+        <collision name='Wall_1_Collision'>
+            <!-- 几何尺寸 -->
+            <geometry>
+                    <box>
+                        <size>4.5 0.4 2.0</size>
+                    </box>
+            </geometry>
+            <!-- 质心坐标系位姿 -->
+            <pose frame=''>0 0 1.0 0 -0 0</pose>
+        </collision>
+    <!-- 可视化参数 -->
+      <visual name='Wall_1_Visual'>
+        <!-- 质心坐标系位姿 -->
+        <pose frame=''>0 0 1.0 0 -0 0</pose>
+        <!-- 几何尺寸 -->
+        <geometry>
+            <box>
+                <size>4.5 0.4 2.0</size>
+            </box>
+        </geometry>
+        <!-- 材质 -->
+        <material>
+            <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+            <layer>0</layer>
+        </meta>
+      </visual>
+      <!-- 相对整体的位姿 -->
+      <pose frame=''>0 0 0 0 -0 0</pose>
+    </link>
+
+        <!-- 组件2：后侧墙 -->
+    <link name='Wall_2'>
+        <!-- 碰撞参数 -->
+        <collision name='Wall_2_Collision'>
+            <!-- 几何尺寸 -->
+            <geometry>
+                    <box>
+                        <size>4.5 0.4 2.0</size>
+                    </box>
+            </geometry>
+            <!-- 质心坐标系位姿 -->
+            <pose frame=''>0 0 1.0 0 -0 0</pose>
+        </collision>
+    <!-- 可视化参数 -->
+      <visual name='Wall_2_Visual'>
+        <!-- 质心坐标系位姿 -->
+        <pose frame=''>0 0 1.0 0 -0 0</pose>
+        <!-- 几何尺寸 -->
+        <geometry>
+            <box>
+                <size>4.5 0.4 2.0</size>
+            </box>
+        </geometry>
+        <!-- 材质 -->
+        <material>
+            <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Bricks</name>
+            </script>
+            <ambient>1 1 1 1</ambient>
+        </material>
+        <meta>
+            <layer>0</layer>
+        </meta>
+      </visual>
+      <!-- 相对整体的位姿 -->
+      <pose frame=''>2.5 2.5 0 0 -0 0</pose>
+    </link>
+
+    <static>1</static>
+  </model>
+</sdf>

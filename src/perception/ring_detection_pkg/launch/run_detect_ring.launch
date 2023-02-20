@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="ring_detection_pkg" type="ring_detection_pkg" name="ring_detection_pkg" output = "screen">
+        <!-- 圆环中心半径 -->
+        <param name="/ring_radius" value="0.5"/>
+        <!-- 内点最大误差 -->
+        <param name="/max_inner_error" value="0.18"/>
+        <!-- 最小内点率 -->
+        <param name="/min_inner_rate" value="0.72"/>
+        <!-- 最大迭代次数 -->
+        <param name="/max_iter_time" value="1000"/>    
+
+        <!-- DBSCAN相关参数 -->
+        <param name="/search_radius" value="0.20"/>
+        <param name="/min_nbrs_num" value="4"/>
+        <param name="/min_total_num" value="35"/>       
+
+        <!-- 测试：分割一个固定区域 -->
+        <param name="/x_max" value="10.0"/>
+        <param name="/x_min" value="-10.0"/>
+        <param name="/y_max" value="10.0"/>
+        <param name="/y_min" value="-10.0"/>
+        <param name="/z_max" value="2.0"/>
+        <param name="/z_min" value="0.5"/>
+
+        
+        
+    </node>
+
+</launch>

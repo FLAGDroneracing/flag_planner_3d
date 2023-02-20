@@ -1,0 +1,139 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+ 
+<model name="RING">
+	<pose>8 -14 0 0 0 0</pose>
+	
+	<link name='ring'>
+		<visual name='ring_visual'>
+			<pose>0 0 2 1.57519 0 0</pose>
+			<geometry>
+				<polyline>
+					<height>0.1</height>
+<point>0.75 0.0</point>
+<point>0.704769465589 0.256515107494</point>
+<point>0.574533332339 0.482090707265</point>
+<point>0.375 0.649519052838</point>
+<point>0.13023613325 0.738605814759</point>
+<point>-0.13023613325 0.738605814759</point>
+<point>-0.375 0.649519052838</point>
+<point>-0.574533332339 0.482090707265</point>
+<point>-0.704769465589 0.256515107494</point>
+<point>-0.75 9.18485099361e-17</point>
+<point>-0.704769465589 -0.256515107494</point>
+<point>-0.574533332339 -0.482090707265</point>
+<point>-0.375 -0.649519052838</point>
+<point>-0.13023613325 -0.738605814759</point>
+<point>0.13023613325 -0.738605814759</point>
+<point>0.375 -0.649519052838</point>
+<point>0.574533332339 -0.482090707265</point>
+<point>0.704769465589 -0.256515107494</point>
+<point>0.75 -1.83697019872e-16</point>
+				</polyline>
+				<polyline>
+					<height>0.1</height>
+<point>0.8 0.0</point>
+<point>0.751754096629 0.273616114661</point>
+<point>0.612835554495 0.514230087749</point>
+<point>0.4 0.692820323028</point>
+<point>0.138918542134 0.78784620241</point>
+<point>-0.138918542134 0.78784620241</point>
+<point>-0.4 0.692820323028</point>
+<point>-0.612835554495 0.514230087749</point>
+<point>-0.751754096629 0.273616114661</point>
+<point>-0.8 9.79717439318e-17</point>
+<point>-0.751754096629 -0.273616114661</point>
+<point>-0.612835554495 -0.514230087749</point>
+<point>-0.4 -0.692820323028</point>
+<point>-0.138918542134 -0.78784620241</point>
+<point>0.138918542134 -0.78784620241</point>
+<point>0.4 -0.692820323028</point>
+<point>0.612835554495 -0.514230087749</point>
+<point>0.751754096629 -0.273616114661</point>
+<point>0.8 -1.95943487864e-16</point>
+				</polyline>
+			</geometry>
+			<material>
+				<script>
+					<uri>file://media/materials/scripts/gazebo.material</uri>
+					<name>Gazebo/Blue</name>
+				</script>
+			</material>
+		</visual>
+		<collision name='ring_collision'>
+			<pose>0 0 2 1.57519 0 0</pose>
+			<geometry>
+											<polyline>
+					<height>0.1</height>
+<point>0.75 0.0</point>
+<point>0.704769465589 0.256515107494</point>
+<point>0.574533332339 0.482090707265</point>
+<point>0.375 0.649519052838</point>
+<point>0.13023613325 0.738605814759</point>
+<point>-0.13023613325 0.738605814759</point>
+<point>-0.375 0.649519052838</point>
+<point>-0.574533332339 0.482090707265</point>
+<point>-0.704769465589 0.256515107494</point>
+<point>-0.75 9.18485099361e-17</point>
+<point>-0.704769465589 -0.256515107494</point>
+<point>-0.574533332339 -0.482090707265</point>
+<point>-0.375 -0.649519052838</point>
+<point>-0.13023613325 -0.738605814759</point>
+<point>0.13023613325 -0.738605814759</point>
+<point>0.375 -0.649519052838</point>
+<point>0.574533332339 -0.482090707265</point>
+<point>0.704769465589 -0.256515107494</point>
+<point>0.75 -1.83697019872e-16</point>
+				</polyline>
+				<polyline>
+					<height>0.1</height>
+<point>0.8 0.0</point>
+<point>0.751754096629 0.273616114661</point>
+<point>0.612835554495 0.514230087749</point>
+<point>0.4 0.692820323028</point>
+<point>0.138918542134 0.78784620241</point>
+<point>-0.138918542134 0.78784620241</point>
+<point>-0.4 0.692820323028</point>
+<point>-0.612835554495 0.514230087749</point>
+<point>-0.751754096629 0.273616114661</point>
+<point>-0.8 9.79717439318e-17</point>
+<point>-0.751754096629 -0.273616114661</point>
+<point>-0.612835554495 -0.514230087749</point>
+<point>-0.4 -0.692820323028</point>
+<point>-0.138918542134 -0.78784620241</point>
+<point>0.138918542134 -0.78784620241</point>
+<point>0.4 -0.692820323028</point>
+<point>0.612835554495 -0.514230087749</point>
+<point>0.751754096629 -0.273616114661</point>
+<point>0.8 -1.95943487864e-16</point>
+				</polyline>
+			</geometry>
+		</collision>
+		<visual name="pole_visual">
+			<pose>0 -0.05 0.6 0 0 0</pose>
+			<geometry>
+				<box>
+					<size>0.1 0.1 1.2</size>
+				</box>
+			</geometry>
+			<material>
+				<script>
+					<uri>file://media/materials/scripts/gazebo.material</uri>
+					<name>Gazebo/Yellow</name>
+				</script>
+        	</material>
+		</visual>
+		<collision name="pole_collision">
+			<pose>0 -0.05 0.6 0 0 0</pose>
+			<geometry>
+				<box>
+					<size>0.1 0.1 1.2</size>
+				</box>
+			</geometry>
+		</collision>
+
+
+	</link>
+</model>
+
+</sdf>

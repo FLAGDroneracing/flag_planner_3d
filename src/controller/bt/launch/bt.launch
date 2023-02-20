@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+     <node pkg="bt" type="bt" name="bt" output="screen"> 
+     </node>
+
+</launch>
